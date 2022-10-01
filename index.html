@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="percentageRadio" name="variables" checked>
+  <label for="percentageRadio">Percentage</label>
+
+  <input type="radio" id="pointsQuestionsRadio" name="variables">
+  <label for="pointsQuestionsRadio"># Points / Questions</label>
+
+  <input type="radio" id="wrongRadio" name="variables" disabled>
+  <label for="wrongRadio"># Wrong</label>
+
+  <input type="radio" id="correctRadio" name="variables">
+  <label for="correctRadio"># Correct</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1"># Points / Questions</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2"># Wrong</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3"># Correct</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
